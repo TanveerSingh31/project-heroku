@@ -5,8 +5,8 @@ app.get('/', (req, res) => {
     res.send('hello');
 })
 
-const port = process.env.port || 7890;
+const PORT = process.env.PORT || 4444;
 
-app.listen(port, () => {
-    console.log('server started on http://localhost:' + port);
+app.listen(PORT, () => {
+    console.log(`server started on http://localhost:${PORT}`);
 })
